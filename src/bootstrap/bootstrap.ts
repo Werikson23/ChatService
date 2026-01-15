@@ -9,7 +9,7 @@ import { PrometheusMetrics } from '../infra/observability/PrometheusMetrics';
 
 import { createLogger } from './loggerBootstrap';
 import { loadPlugins } from './pluginLoader';
-import { validatePlugins } from './validator';
+import {validateManifest,validateRuntimePlugin} from './validator';
 import { bootstrapInfra } from './infraBootstrap';
 import { bootstrapHttp } from './httpBootstrap';
 import { bootstrapRealtime } from './realtimeBootstrap';
@@ -44,7 +44,6 @@ export async function bootstrap() {
 
   /** Plugins */
   const plugins = await loadPlugins();
-  validatePlugins(plugins);
 
   const pluginManager = new PluginManager(kernel);
   await pluginManager.registerPlugins(plugins);

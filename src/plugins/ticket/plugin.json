@@ -1,0 +1,7 @@
+{
+  "name": "TicketPlugin",
+  "version": "1.0.0",
+  "entry": "main.ts",
+  "required": true,
+  "dependencies": []
+}

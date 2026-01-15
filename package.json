@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "start": "node dist/main.js",
     "build": "tsc",
-    "dev": "ts-node src/main.ts",
-    "start": "node dist/main.js"
+    "dev": "nodemon -L --watch src --ext ts,js,json --exec ts-node src/main.ts"
   },
   "devDependencies": {
     "@types/node": "^25.0.3",
+    "nodemon": "^3.1.11",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
