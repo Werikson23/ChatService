@@ -1,5 +1,5 @@
-import { EventBus } from '../../kernel/EventBus';
-import { RealtimePort } from '../../kernel/ports/RealtimePort';
+import { EventBus } from '../kernel/EventBus';
+import { RealtimePort } from '../kernel/ports/RealtimePort';
 
 export class RealtimeBridge {
   constructor(

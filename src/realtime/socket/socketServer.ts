@@ -1,6 +1,6 @@
 import { Server } from 'socket.io';
 import { createAdapter } from '@socket.io/redis-adapter';
-import { redisClient } from '../../cache/redis/redisClient';
+import { redisClient } from '../../infra/cache/redis/redisClient';
 
 export function createSocketServer(httpServer: any) {
   const io = new Server(httpServer, {

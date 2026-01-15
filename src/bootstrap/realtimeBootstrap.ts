@@ -1,6 +1,6 @@
 import { EventBus } from '../kernel/EventBus';
-import { RealtimeBridge } from '../infra/realtime/RealtimeBridge';
-import { SocketRealtime } from '../infra/realtime/SocketRealtime';
+import { RealtimeBridge } from '../realtime/RealtimeBridge';
+import { SocketRealtime } from '../realtime/SocketRealtime';
 import { Server } from 'socket.io';
 
 export function bootstrapRealtime(

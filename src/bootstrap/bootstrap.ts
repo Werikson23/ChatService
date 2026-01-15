@@ -4,7 +4,7 @@ import { Kernel } from '../kernel/Kernel';
 import { PluginManager } from '../kernel/PluginManager';
 import { LifecycleManager } from '../kernel/lifecycle/LifecycleManager';
 
-import { RedisPubSub } from '../infra/realtime/pubsub/RedisPubSub';
+import { RedisPubSub } from '../realtime/pubsub/RedisPubSub';
 import { PrometheusMetrics } from '../infra/observability/PrometheusMetrics';
 
 import { createLogger } from './loggerBootstrap';

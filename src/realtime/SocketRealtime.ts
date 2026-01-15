@@ -1,5 +1,5 @@
 import { Server } from 'socket.io';
-import { RealtimePort } from '../../kernel/ports/RealtimePort';
+import { RealtimePort } from '../kernel/ports/RealtimePort';
 
 export class SocketRealtime implements RealtimePort {
   constructor(private readonly io: Server) {}
